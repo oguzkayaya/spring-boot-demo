@@ -3,7 +3,9 @@
 		<title>First Spring Web Application</title>
 	</head>
 	<body>
-		TODOS <br><hr>
+		YOUR TODOS <br><hr>
 		${todos}
+		<hr>
+		your name is : ${name}
 	</body>
 </html>

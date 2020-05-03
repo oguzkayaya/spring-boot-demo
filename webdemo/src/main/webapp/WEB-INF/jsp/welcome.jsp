@@ -3,6 +3,6 @@
 		<title>First Spring Web Application</title>
 	</head>
 	<body>
-	welcome ${name}
+	welcome ${name} your password is ${password}
 	</body>
 </html>

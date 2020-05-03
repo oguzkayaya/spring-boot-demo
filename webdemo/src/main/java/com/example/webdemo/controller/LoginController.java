@@ -19,7 +19,7 @@ public class LoginController {
 	@RequestMapping("/about")
 	@ResponseBody
 	public String aboutMessage() {
-		return "hello from about";
+		return "hello from about test";
 	}
 	
 	@RequestMapping("/training")

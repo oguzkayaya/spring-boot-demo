@@ -3,7 +3,7 @@
 		<title>First Spring Web Application</title>
 	</head>
 	<body>
-	welcome ${name} your password is ${password} <br>
-	<a href="/list-todos">CLICK FOR TODO LIST</a>
+		TODOS <br><hr>
+		${todos}
 	</body>
 </html>

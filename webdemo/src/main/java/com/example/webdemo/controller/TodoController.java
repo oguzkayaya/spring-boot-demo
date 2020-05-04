@@ -32,12 +32,18 @@ public class TodoController {
 	public String addTodoPage() {
 		return "todo";
 	}
-	
+
 	@RequestMapping(value = "/add-todo", method = RequestMethod.POST)
 	public String addTodo(ModelMap model, @RequestParam String description) {
-		service.addTodo((String)model.get("name"), description, new Date(), false);
+		service.addTodo((String) model.get("name"), description, new Date(), false);
 		return "redirect:/list-todos";
 	}
-	
+
+	@RequestMapping(value = "/delete-todo", method = RequestMethod.GET)
+	public String deleteTodo(@RequestParam int id) {
+		service.deleteTodo(id);
+
+		return "redirect:/list-todos";
+	}
 
 }

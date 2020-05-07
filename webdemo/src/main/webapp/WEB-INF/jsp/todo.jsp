@@ -13,6 +13,7 @@
 		</div>
 		<hr>
 		<form:form action="" method="post" modelAttribute="todo">
+			<form:hidden path="id"/>
 			<fieldset class="form-group">
 				<form:label path="desc">Description</form:label>
 				<form:input path="desc" class="form-control" required="required"

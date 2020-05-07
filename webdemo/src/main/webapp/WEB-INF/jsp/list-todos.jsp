@@ -7,8 +7,10 @@
 	rel="stylesheet">
 </head>
 <body>
-	<div class="container text-center" >
-		<div class="btn"><a href="add-todo">ADD TODO</a> </div>
+	<div class="container text-center">
+		<div class="btn">
+			<a href="add-todo">ADD TODO</a>
+		</div>
 		<hr>
 		<h1>YOUR TODOS</h1>
 		<table class="table table-striped">
@@ -17,7 +19,8 @@
 					<th>Description</th>
 					<th>Target Date</th>
 					<th>Is Done?</th>
-					<th>Delete</th>
+					<th></th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -26,7 +29,10 @@
 						<td>${todo.desc}</td>
 						<td>${todo.targetDate}</td>
 						<td>${todo.done}</td>
-						<td><a class="btn btn-warning" href="/delete-todo?id=${todo.id}">delete</a></td>
+						<td><a class="btn btn-success"
+							href="/update-todo?id=${todo.id}">update</a></td>
+						<td><a class="btn btn-warning"
+							href="/delete-todo?id=${todo.id}">delete</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>

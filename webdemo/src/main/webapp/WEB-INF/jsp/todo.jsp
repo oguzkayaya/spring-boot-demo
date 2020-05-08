@@ -12,7 +12,18 @@
 
 </head>
 <body>
+<nav role="navigation" class="navbar navbar-default">
+		<div class="">
+			<a href="" class="navbar-brand">BBBBBB</a>
+		</div>
+		<div class="navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/login">Home</a></li>
+				<li><a href="/list-todos">Todos</a></li>
 
+			</ul>
+		</div>
+	</nav>
 	<div class="container">
 		<div class="text-center ">
 			<h2>ADD TODO FOR ${name}</h2>
